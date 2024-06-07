@@ -1,0 +1,29 @@
+.slick-prev, .slick-next {
+    color: black;  /* Change color to suit your design */
+}
+
+.slick-prev:hover, .slick-next:hover {
+    color: grey;  /* Change color on hover to suit your design */
+}
+
+.slick-dots li button:before {
+    color: black;  /* Change dot color */
+}
+
+.slick-dots li.slick-active button:before {
+    color: grey;  /* Change active dot color */
+}
+
+.carousel-slide {
+    margin: 0 10px;  /* Adjust the margin as needed */
+}
+
+.slick-slide {
+    display: flex;
+    justify-content: center;
+}
+
+/* Optional: Adjust the width of each slide to ensure correct spacing */
+.slick-slide > div {
+    width: calc(100% - 20px);  /* Adjust based on the margin */
+}
