@@ -9,6 +9,8 @@ export default {
     extend: {
       fontFamily: {
         Rubik: ['Rubik', 'sans-serif'],
+        Montserrat: ['Montserrat', 'sans-serif'],
+        Abril_Fatface: ['Abril Fatface', 'serif'],
       },
     },
   },

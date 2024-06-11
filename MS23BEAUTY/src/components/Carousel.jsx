@@ -3,10 +3,10 @@ import Slider from 'react-slick';
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import "../assets/css/Carousel.css";  
+import { IMAGES } from "../utils/carousel"
 
 export default function Carousel() {
     const settings = {
-        dots: true,
         infinite: true,
         speed: 500,
         slidesToShow: 3,  
@@ -34,26 +34,10 @@ export default function Carousel() {
         ]
     };
 
-    const images = [
-        "/carousel/slide_37.jpg",
-        "/carousel/slide_38.jpg",
-        "/carousel/slide_39.jpg",
-        "/carousel/slide_40.jpg",
-        "/carousel/slide_41.jpg",
-        "/carousel/slide_42.jpg",
-        "/carousel/slide_43.jpg",
-        "/carousel/slide_44.jpg",
-        "/carousel/slide_45.jpg",
-        "/carousel/slide_46.jpg",
-        "/carousel/slide_47.jpg",
-        "/carousel/slide_48.jpg",
-        "/carousel/slide_49.jpg",
-    ];
-
     return (
         <div className="container mx-auto px-4 py-6 my-20 mt-20 md:mt-24">
             <Slider {...settings}>
-                {images.map((image, index) => (
+                {IMAGES.map((image, index) => (
                     <div key={index} className="carousel-slide">
                         <img src={image} alt={`Slide ${index + 1}`} className="w-full h-auto" />
                     </div>
