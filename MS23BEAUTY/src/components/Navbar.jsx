@@ -1,7 +1,6 @@
 import { useState, useEffect } from 'react';
-import icon from '../assets/imgs/navbar/ms23_logo.png';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faBars, faXmark, faAngleDown, faAngleUp } from '@fortawesome/free-solid-svg-icons';
+import { faBars, faXmark } from '@fortawesome/free-solid-svg-icons';
 import "../assets/css/Navbar.css";
 
 export default function Navbar() {
@@ -17,7 +16,7 @@ export default function Navbar() {
             <div className='flex justify-between items-center'>
                 <span className='cursor-pointer'>
                     <span className='ml-2 text-2xl md:text-4xl md:items-center font-Abril_Fatface'>
-                        <img className='h-12 md:items-center md:h-[60px] rounded-full m-0 inline mr-3' src={icon} alt="logo" /> 
+                        <img className='h-12 md:items-center md:h-[60px] rounded-full m-0 inline mr-3' src="ms23_logo.png" alt="logo" /> 
                         MS23 BEAUTY
                     </span>
                 </span>
@@ -43,9 +42,13 @@ export default function Navbar() {
                         Eyelash & Waxing
                     </a>
                 </li>
-                {/* <li className='mx-2 my-3 md:my-0'>
-                    <a href='/promotions' className={`hover-underline-animation text-xl duration-500 ${menuOpen ? 'text-white' : ''}`}>Promotions</a>
-                </li> */}
+                <li
+                    className='mx-2 my-1 md:my-0'
+                >
+                    <a href='/promotion' className={`hover-underline-animation text-xl duration-500 ${menuOpen ? 'text-black' : ''}`} >
+                        Promotions
+                    </a>
+                </li>
                 <li className='mx-2 my-1 md:my-0'>
                     <a href='/about' className={`hover-underline-animation text-xl duration-500 ${menuOpen ? 'text-black' : ''}`}>About</a>
                 </li>

@@ -7,7 +7,7 @@ export default function Nails() {
     <div className="flex flex-col min-h-screen">
       <Navbar />
       <main className="flex-grow">
-        <section className="bg-gray-50 py-12 mt-20 md:mt-24" id='nails'>
+        <section className=" py-12 mt-20 md:mt-24" id='nails'>
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <h1 className='text-4xl mb-4 md:text-5xl md:mb-4 text-center font-Abril_Fatface'>Our Nail Services</h1>
             <div className="space-y-12">

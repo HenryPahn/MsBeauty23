@@ -44,7 +44,7 @@ export default function Contact() {
     return (
         <div className="flex flex-col min-h-screen">
             <Navbar />
-            <main className="flex-grow bg-gray-50">
+            <main className="flex-grow">
                 {messageSent ? (
                     <div className="flex flex-col items-center justify-center mt-32 md:mt-60">
                         <div className="bg-white p-6 rounded-lg shadow-lg text-center max-w-md w-full">

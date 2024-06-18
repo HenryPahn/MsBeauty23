@@ -180,7 +180,7 @@ export const OTHER_SERVICES = [
 			},
 			{
 				name: 'Lash Lift',
-				price: 'ONLY 90$',
+				price: 'ONLY $90',
 				description: '',
 			},
 			{
