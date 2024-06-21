@@ -15,30 +15,30 @@ export default function Navbar() {
         <nav className={`navbar p-5 md:py-7 bg-white md:flex md:items-center md:justify-between font-Montserrat`}>
             <div className='flex justify-between items-center'>
                 <span className='cursor-pointer'>
-                    <span className='ml-2 text-2xl md:text-4xl md:items-center font-Abril_Fatface'>
-                        <img className='h-12 md:items-center md:h-[60px] rounded-full m-0 inline mr-3' src="ms23_logo.png" alt="logo" /> 
+                    <span className='ml-2 text-2xl 2xl:text-4xl md:items-center font-Abril_Fatface'>
+                        <img className='h-12 md:items-center md:h-[60px] rounded-full m-0 inline mr-3' src="logo.png" alt="logo" /> 
                         MS23 BEAUTY
                     </span>
                 </span>
-                <span className='text-3xl cursor-pointer mx-2 md:hidden block mb-3'>
+                <span className='absolute text-3xl cursor-pointer mx-2 block mb-3 right-2 xl:hidden'>
                     <FontAwesomeIcon icon={!menuOpen ? faBars : faXmark} onClick={handleMenuClick} />
                 </span>
             </div>
-            <ul className={`z-[1] w-full left-0 absolute py-4 pl-7 md:py-0 md:z-auto md:w-auto md:static md:flex md:items-center md:pl-0 md:opacity-100 top-[-400px] transition-all ease-in duration-500 ${menuOpen ? 'top-[80px] bg-white flex flex-col' : ' '}`}>
+            <ul className={`z-[1] w-full left-0 absolute py-4 pl-7 xl:py-0 xl:z-auto xl:w-auto xl:static xl:flex xl:items-center xl:pl-0 xl:opacity-100 top-[-400px] transition-all ease-in duration-500 ${menuOpen ? 'top-[80px] bg-white flex flex-col' : ' '}`}>
                 <li className='mx-2 my-1 md:my-0'>
-                    <a href='/' className={`hover-underline-animation text-xl duration-500 ${menuOpen ? 'text-black' : ''}`}>Home</a>
+                    <a href='/' className={`hover-underline-animation text-xl 2xl:text-xl duration-500 ${menuOpen ? 'text-black' : ''}`}>Home</a>
                 </li>
                 <li
                     className='mx-2 my-1 md:my-0'
                 >
-                    <a href='/services/nails' className={`hover-underline-animation text-xl duration-500 ${menuOpen ? 'text-black' : ''}`} >
+                    <a href='/nails' className={`hover-underline-animation text-xl duration-500 ${menuOpen ? 'text-black' : ''}`} >
                         Nail Care
                     </a>
                 </li>
                 <li
                     className='mx-2 my-1 md:my-0'
                 >
-                    <a href='/services/eyelash-waxing' className={`hover-underline-animation text-xl duration-500 ${menuOpen ? 'text-black' : ''}`} >
+                    <a href='/eyelash-waxing' className={`hover-underline-animation text-xl duration-500 ${menuOpen ? 'text-black' : ''}`} >
                         Eyelash & Waxing
                     </a>
                 </li>
@@ -67,22 +67,3 @@ export default function Navbar() {
         </nav>
     );
 }
-
-
-{/* <button 
-                    onClick={() => {
-                        scrollToFooter();
-                        setMenuOpen(false);
-                    }} 
-                    className={`font-bold text-2xl duration-500 w-11/12 py-4 md:w-auto md:px-6 md:mx-4 md:my-0 mt-auto md:text-white bg-white md:bg-slate-950 md:hover:bg-slate-500 md:hover:text-white ${menuOpen ? 'block' : 'hidden'}`}>
-                    Contact Us
-                </button>
-            </ul>
-            <button 
-                onClick={() => {
-                    scrollToFooter();
-                    setMenuOpen(false);
-                }} 
-                className={`text-2xl duration-500 w-11/12 py-4 md:w-auto md:px-6 md:mx-4 md:my-0 mt-auto md:text-white bg-white md:bg-slate-950 md:hover:bg-slate-500 md:hover:text-white hidden md:block`}>
-                Contact Us
-            </button> */}

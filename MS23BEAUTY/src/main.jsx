@@ -17,8 +17,8 @@ ReactDOM.createRoot(document.getElementById('root')).render(
         <Route path="/" element={<App />} />
         <Route path="/about" element={<About />} />
         <Route path="/giftcard" element={<GiftCard />} />
-        <Route path="/services/nails" element={<Nails />} />
-        <Route path="/services/eyelash-waxing" element={<Eyelash_Waxing />} />
+        <Route path="/nails" element={<Nails />} />
+        <Route path="/eyelash-waxing" element={<Eyelash_Waxing />} />
         <Route path="/contact" element={<Contact />} />
         <Route path="/promotion" element={<Promotion />} />
       </Routes>

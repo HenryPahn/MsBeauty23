@@ -12,7 +12,7 @@ export default function Notification() {
 
   return (
     visible && (
-      <div className="bg-yellow-100 text-center p-4 text-lg font-Montserrat relative">
+      <div className="bg-black text-white text-center p-4 text-xs font-Montserrat relative lg:text-sm xl:text-base">
         <p className="font-bold">
           🔥 Summer Promotion is On! Treat your feet to perfection with our special deals.{' '}
           <a href="/promotion" className="underline">

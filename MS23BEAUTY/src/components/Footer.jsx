@@ -2,11 +2,13 @@ import React from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faFacebook, faInstagram, faTiktok } from '@fortawesome/free-brands-svg-icons';
 import { faEnvelope, faPhone, faLocationDot } from '@fortawesome/free-solid-svg-icons';
+import Notification from './Notification';
 
 export default function Footer() {
     return (
         <footer className="bg-gray-100 text-black py-8 font-Montserrat border-t-2">
             <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                
                 <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
                     <div>
                         <h3 className="text-xl font-bold mb-4">Contact Us</h3>
