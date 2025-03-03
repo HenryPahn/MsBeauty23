@@ -8,13 +8,13 @@ export default function Nails() {
 
   useEffect(() => {
     async function fetchData() {
+      let categoryName = "Nail Services"
       try {
-        const response = await fetch('https://ms23beauty-backend.vercel.app/services', {
-          method: 'POST',
+        const response = await fetch(`https://ms23beauty-backend.vercel.app/services?category=${categoryName}`, {
+          method: 'GET',
           headers: {
             'Content-Type': 'application/json',
           },
-          body: JSON.stringify({ category: 'Nail Services' }),
         });
         const data = await response.json();
         setNailServices(data);
@@ -62,4 +62,3 @@ export default function Nails() {
     </div>
   )
 }
-

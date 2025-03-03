@@ -9,17 +9,16 @@ export default function Eyelash_Waxing() {
 
   useEffect(() => {
     async function fetchData() {
+      let categoryName = "Other Services"
       try {
-        const response = await fetch('https://ms23beauty-backend.vercel.app/services', {
-          method: 'POST',
+        const response = await fetch(`https://ms23beauty-backend.vercel.app/services?category=${categoryName}`, {
+          method: 'GET',
           headers: {
             'Content-Type': 'application/json',
           },
-          body: JSON.stringify({ category: 'Other Services' }),
         });
         const data = await response.json();
         setOtherServices(data);
-        console.log(data[0].services[0].serviceItems[0])
       } catch (error) {
         console.error('Error fetching data:', error);
       }
@@ -64,4 +63,3 @@ export default function Eyelash_Waxing() {
     </div>
   )
 }
-

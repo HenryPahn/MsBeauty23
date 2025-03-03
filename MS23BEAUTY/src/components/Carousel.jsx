@@ -37,16 +37,16 @@ export default function Carousel() {
     return (
         <div className="container mx-auto px-4 py-6 mt-20 md:mt-24">
             <Slider {...settings}>
-                {IMAGES.map((image, index) => (
+                {IMAGES.slice().reverse().map((image, index) => (
                     <div key={index} className="carousel-slide">
-                        <img src={image} alt={`Slide ${index + 1}`} className="w-full h-auto" />
+                        <img src={image} alt={`Slide ${index + 1}`} className="" />
                     </div>
                 ))}
             </Slider>
         </div>
     );
 }
-
+// w-full h-auto
 function SampleNextArrow(props) {
     const { className, style, onClick } = props;
     return (

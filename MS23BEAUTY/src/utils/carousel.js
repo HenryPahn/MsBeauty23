@@ -47,5 +47,10 @@ export const IMAGES = [
     "/slideshow/slide_46.jpg",
     "/slideshow/slide_47.jpg",
     "/slideshow/slide_48.jpg",
-    "/slideshow/slide_49.jpg"
+    "/slideshow/slide_49.jpg", 
+    "/slideshow/slide_50.jpg",
+    "/slideshow/slide_51.jpg",
+    "/slideshow/slide_52.jpg",
+    "/slideshow/slide_53.jpg",
+    "/slideshow/slide_54.jpg"
 ];
