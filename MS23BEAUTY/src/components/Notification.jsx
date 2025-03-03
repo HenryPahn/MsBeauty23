@@ -14,7 +14,7 @@ export default function Notification() {
     visible && (
       <div className="bg-black text-white text-center p-4 text-xs font-Montserrat relative lg:text-sm xl:text-base">
         <p className="font-bold">
-          🔥 Summer Promotion is On! Treat your feet to perfection with our special deals.{' '}
+          🔥 Unwrap the Mystery: Celebrate Christmas & New Year with a Surprise Gift Bag! {' '}
           <a href="/promotion" className="underline">
             Learn More
           </a>{' '}
