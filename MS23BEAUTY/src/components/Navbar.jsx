@@ -1,21 +1,28 @@
 import { useState, useEffect } from 'react';
+import { useNavigate } from "react-router-dom";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faBars, faXmark } from '@fortawesome/free-solid-svg-icons';
 import "../assets/css/Navbar.css";
 
 export default function Navbar() {
     const [menuOpen, setMenuOpen] = useState(false);
+    const navigate = useNavigate();
 
     const handleMenuClick = (e) => {
         e.preventDefault();
         setMenuOpen(prevClick => !prevClick);
     };
 
+    const handleLogoClick = (e) => {
+        e.preventDefault();
+        navigate('/');
+    };
+
     return (
         <nav className={`navbar p-5 md:py-7 bg-white md:flex md:items-center md:justify-between font-Montserrat`}>
             <div className='flex justify-between items-center'>
                 <span className='cursor-pointer'>
-                    <span className='ml-2 text-2xl 2xl:text-4xl md:items-center font-Abril_Fatface'>
+                    <span className='ml-2 text-2xl 2xl:text-4xl md:items-center font-Abril_Fatface' onClick={handleLogoClick}>
                         <img className='h-12 md:items-center md:h-[60px] rounded-full m-0 inline mr-3' src="logo.png" alt="logo" /> 
                         MS23 BEAUTY
                     </span>
