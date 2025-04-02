@@ -35,7 +35,7 @@ export default function Carousel() {
     };
 
     return (
-        <div className="container mx-auto px-4 py-6 mt-20 md:mt-24">
+        <div className="container mx-auto px-4 py-6 mt-20 md:mt-24 lg:mt-40">
             <Slider {...settings}>
                 {IMAGES.slice().reverse().map((image, index) => (
                     <div key={index} className="carousel-slide">
