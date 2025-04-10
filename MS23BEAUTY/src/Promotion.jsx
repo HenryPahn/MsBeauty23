@@ -20,24 +20,6 @@ export default function Promotion() {
             className="md:w-8/12 2xl:w-4/12 lg:mt-7 pl-8 pr-8"
           />
         </div>
-
-        <div className="flex flex-col items-center text-center mt-6 mb-6 md:mt-10 md:mb-10">
-          <h1 className="text-4xl mb-4 md:text-5xl md:mb-4 font-Abril_Fatface">Unwrap the Mystery!</h1>
-          <img
-            src="/promotions/Winter2025Promotion.png"
-            alt="Winter 2025 Promotion"
-            className="2xl:w-10/12 pl-8 pr-8"
-          />
-        </div>
-
-        <div className="flex flex-col items-center text-center mt-6 mb-6 md:mt-10 md:mb-10">
-          <h1 className="text-4xl mb-4 md:text-5xl md:mb-4 font-Abril_Fatface">Exclusive Discounts on Eyelash Services!</h1>
-          <img
-            src="/promotions/EyelashPromotion.png"
-            alt="Winter 2025 Promotion"
-            className="md:w-8/12 2xl:w-5/12 pl-8 pr-8"
-          />
-        </div>
       </div>
 
       <Warning />

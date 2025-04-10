@@ -14,11 +14,11 @@ export default function Notification() {
     visible && (
       <div className="bg-black text-white text-center p-4 text-xs font-Montserrat relative lg:text-sm xl:text-base">
         <p className="font-bold">
-          🔥 Unwrap the Mystery: Celebrate Christmas & New Year with a Surprise Gift Bag! {' '}
+          🌞 Feel the Summer Vibes: Enjoy a FREE Deluxe Pedicure with your friend! {' '}
           <a href="/promotion" className="underline">
             Learn More
           </a>{' '}
-          🔥
+          🌴
         </p>
         <button 
           onClick={handleClose} 
