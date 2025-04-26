@@ -23,7 +23,7 @@ export default function Navbar() {
             <div className='flex justify-between items-center'>
                 <span className='cursor-pointer'>
                     <span className='ml-2 text-2xl 2xl:text-4xl md:items-center font-Abril_Fatface' onClick={handleLogoClick}>
-                        <img className='h-12 md:items-center md:h-[60px] rounded-full m-0 inline mr-3' src="logo.png" alt="logo" /> 
+                        <img className='h-12 md:items-center md:h-[60px] rounded-full m-0 inline mr-3' src="logo.png" alt="logo" />
                         MS23 BEAUTY
                     </span>
                 </span>
@@ -57,9 +57,6 @@ export default function Navbar() {
                     </a>
                 </li>
                 <li className='mx-2 my-1 md:my-0'>
-                    <a href='/about' className={`hover-underline-animation text-xl duration-500 ${menuOpen ? 'text-black' : ''}`}>About</a>
-                </li>
-                <li className='mx-2 my-1 md:my-0'>
                     <a href='https://www.instagram.com/ms23beauty/' target="_blank" className={`hover-underline-animation text-xl duration-500 ${menuOpen ? 'text-black' : ''}`}>Instagram</a>
                 </li>
                 <li className='mx-2 my-1 md:my-0'>
@@ -69,6 +66,12 @@ export default function Navbar() {
                     >
                         Contact
                     </a>
+                </li>
+                <li className='mx-2 my-1 md:my-0'>
+                    <a href='/policy' className={`hover-underline-animation text-xl duration-500 ${menuOpen ? 'text-black' : ''}`}>Policy</a>
+                </li>
+                <li className='mx-2 my-1 md:my-0'>
+                    <a href='/about' className={`hover-underline-animation text-xl duration-500 ${menuOpen ? 'text-black' : ''}`}>About</a>
                 </li>
             </ul>
         </nav>
