@@ -8,6 +8,7 @@ import Promotion from './Promotion';
 import Nails from './Nails';
 import Eyelash_Waxing from './Eyelash-Waxing';
 import Contact from './Contact';
+import Policy from './Policy';
 import "./assets/css/index.css"
 
 ReactDOM.createRoot(document.getElementById('root')).render(
@@ -21,6 +22,7 @@ ReactDOM.createRoot(document.getElementById('root')).render(
         <Route path="/eyelash-waxing" element={<Eyelash_Waxing />} />
         <Route path="/contact" element={<Contact />} />
         <Route path="/promotion" element={<Promotion />} />
+        <Route path="/policy" element={<Policy />} />
       </Routes>
     </Router>
   </React.StrictMode>
